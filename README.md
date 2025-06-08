@@ -2,6 +2,8 @@
 
 This project is a **mini HR and Payroll system** built using **Oracle Live SQL** and **PL/SQL**. It demonstrates how to manage employees, record attendance, handle leave requests, and process monthly payroll, simulating real-world ERP functionality — perfect for showcasing skills relevant to Oracle Applications Labs (OAL).
 
+---
+
 ## 🔧 Features
 
 - **Employee Management**: Add and store employee details like name, department, position, hire date, and base salary.
@@ -17,12 +19,16 @@ This project is a **mini HR and Payroll system** built using **Oracle Live SQL**
   - Stores payroll history per employee per month.
 - **Robust Error Handling** using PL/SQL exceptions.
 
+---
+
 ## 📁 Database Tables
 
 - `employees`: Stores basic employee information.
 - `attendance`: Tracks daily hours worked and absence info.
 - `leave_requests`: Stores leave requests with approval tracking.
 - `payroll_history`: Stores processed payroll data per employee/month.
+
+---
 
 ## 💻 PL/SQL Procedures
 
@@ -34,18 +40,20 @@ Approves or rejects a leave request. Accepts `APPROVE` or `REJECT` as valid acti
 
 ### `process_payroll(p_employee_id, p_month)`
 Processes an employee’s salary for the given month:
-- Calculates gross pay from `base_salary`
-- Deducts pay for missing work hours (less than 160 hours)
-- Deducts pay for days of rejected leave requests
-- Inserts payroll summary into `payroll_history`
+- Calculates gross pay from `base_salary`.
+- Deducts pay for missing work hours (less than 160 hours).
+- Deducts pay for days of rejected leave requests.
+- Inserts payroll summary into `payroll_history`.
 
-##⚙️ Technologies Used
+---
 
-- Oracle Live SQL
+## ⚙️ Technologies Used
 
-- PL/SQL: Stored procedures, conditionals, error handling
+- **Oracle Live SQL**
+- **PL/SQL**: Stored procedures, conditionals, error handling
+- **SQL**: Table creation, constraints, inserts, selects
 
-- SQL: Table creation, constraints, inserts, selects
+---
 
 ## 🧪 Sample Execution
 
@@ -61,4 +69,3 @@ EXECUTE process_payroll(4, '2025-06');
 
 -- View payroll history
 SELECT * FROM payroll_history;
-
