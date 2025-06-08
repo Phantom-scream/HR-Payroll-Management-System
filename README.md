@@ -39,6 +39,14 @@ Processes an employee’s salary for the given month:
 - Deducts pay for days of rejected leave requests
 - Inserts payroll summary into `payroll_history`
 
+##⚙️ Technologies Used
+
+- Oracle Live SQL
+
+- PL/SQL: Stored procedures, conditionals, error handling
+
+- SQL: Table creation, constraints, inserts, selects
+
 ## 🧪 Sample Execution
 
 ```sql
@@ -54,10 +62,3 @@ EXECUTE process_payroll(4, '2025-06');
 -- View payroll history
 SELECT * FROM payroll_history;
 
-##⚙️ Technologies Used
-
-- Oracle Live SQL
-
-- PL/SQL: Stored procedures, conditionals, error handling
-
-- SQL: Table creation, constraints, inserts, selects
