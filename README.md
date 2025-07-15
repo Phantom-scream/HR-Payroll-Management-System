@@ -1,4 +1,4 @@
-# Oracle HR & Payroll Management System (PL/SQL)
+# HR & Payroll Management System (PL/SQL)
 
 This project is a **mini HR and Payroll system** built using **Oracle Live SQL** and **PL/SQL**. It demonstrates how to manage employees, record attendance, handle leave requests, and process monthly payroll, simulating real-world ERP functionality — perfect for showcasing skills relevant to Oracle Applications Labs (OAL).
 
